@@ -34,7 +34,7 @@
     "spatie/image": "^1.4.0",
     "spatie/pdf-to-image": "^1.2",
     "spatie/temporary-directory": "^1.1",
-     "ramsey/uuid": "^3.7",
+    "ramsey/uuid": "^3.7"
   },
   "require-dev": {
     "ext-pdo_sqlite": "*",
