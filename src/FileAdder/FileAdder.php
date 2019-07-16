@@ -2,6 +2,7 @@
 
 namespace Spatie\MediaLibrary\FileAdder;
 
+use Ramsey\Uuid\Uuid;
 use Spatie\MediaLibrary\Helpers\File;
 use Spatie\MediaLibrary\Models\Media;
 use Illuminate\Database\Eloquent\Model;
@@ -216,6 +217,8 @@ class FileAdder
         $mediaClass = config('medialibrary.media_model');
         /** @var \Spatie\MediaLibrary\Models\Media $media */
         $media = new $mediaClass();
+        
+        $media->key = Uuid::uuid4();
 
         $media->name = $this->mediaName;
 
